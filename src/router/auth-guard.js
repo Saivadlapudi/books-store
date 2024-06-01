@@ -1,8 +1,11 @@
+import { useAuthStore } from "../stores/auth";
+
 function validateRouteProtection(to){
-    const userAuthenticated = false;
+    const authStore = useAuthStore();
+    const userAuthenticated = authStore?.isUserAuthenticated
     if(to?.meta?.requiresNoAuthentication){
         if(to?.meta?.denyAccessWhenUserIsAuthenticated && userAuthenticated){
-            window.location = "/dashboard";
+            window.location = "/home";
         }
     }else{
         if(!userAuthenticated){

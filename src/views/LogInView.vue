@@ -1,86 +1,72 @@
 <template>
-    <div class=" row q-mt-lg justify-center">
-        <div class="col-md-6">
-            <q-card class="q-pa-md">
-      <q-form
-        @submit="onSubmit"
-        class="q-gutter-md"
-        greedy
-      >
-      <h4 class="text-center">{{miniProjLabels?.loginToApplication}}</h4>
-        <q-input
-        outlined
-          no-error-icon
-          v-model="name"
-          :label= miniProjLabels?.userName
-          hint="email"
-          lazy-rules
-          :rules="[ val => val && val.length > 0 || miniProjErrors?.pleaseEnterUserName]"
-        />
-  
-        <q-input
-          no-error-icon
-          outlined
-          type="password"
-          v-model="age"
-          :label=miniProjLabels?.password
-          lazy-rules
-          :rules="[
-            val => val !== null && val !== '' || miniProjErrors?.pleaseEnterPassword,
-          ]"
-        />
-        <div class="row justify-center">
-          <q-btn :label=miniProjLabels?.login type="submit" color="primary"/>
-        </div>
-      </q-form>
-    </q-card>
-    </div>
-    </div>
-  </template>
-  
-  <script setup>
-  import { useQuasar } from 'quasar'
-  import { ref } from 'vue'
-  import LogInService from "../services/login-service"
-  import miniProjMessages from "../assets/messages/mini-proj.json";
+  <div class=" row q-mt-lg justify-center">
+    <div class="col-md-6">
+      <q-card class="q-pa-md">        
+        <q-form @submit="onSubmit" class="q-gutter-md" greedy>
+          <h4 class="text-center">{{ loginLabels?.loginToApplication }}</h4>
+          <div v-if="alertBanner" class="text-red text-center">{{ alertMessage }}</div>
+          <q-input outlined no-error-icon v-model="name" :label=loginLabels?.userName hint="email" lazy-rules
+            :rules="[val => val && val.length > 0 || loginErrors?.pleaseEnterUserName]" />
 
-  const miniProjLabels = miniProjMessages?.login?.labels;
-  const miniProjErrors = miniProjMessages?.login?.errors;
-  
-      const $q = useQuasar()
-  
-      const name = ref(null)
-      const age = ref(null)
-      const accept = ref(false)
-  
-     const onSubmit = () => {
-          if (accept.value !== true) {
-            $q.notify({
-              color: 'red-5',
-              textColor: 'white',
-              icon: 'warning',
-              message: 'You need to accept the license and terms first'
-            })
-          }
-          else {
-            $q.notify({
-              color: 'green-4',
-              textColor: 'white',
-              icon: 'cloud_done',
-              message: 'Submitted'
-            })
-          }
-        }
+          <q-input no-error-icon outlined type="password" v-model="password" :label=loginLabels?.password lazy-rules
+            :rules="[
+              val => val !== null && val !== '' || loginErrors?.pleaseEnterPassword,
+            ]" />
+          <div class="row justify-center q-gutter-x-md">
+            <q-btn :label=loginLabels?.login type="submit" color="primary" />
+            <q-btn :label=loginLabels?.register  color="primary" outline />
+          </div>
+        </q-form>
+      </q-card>
+    </div>
+  </div>
+</template>
 
-const login = async() =>{
-    try{
-        const res = await LogInService.login();
-        console.log(res)
-    }
-    catch(error){
-        console.log(error)
-    }
-}     
-login()   
-  </script>
-  
+<script setup>
+//import { useQuasar } from 'quasar'
+import { ref } from 'vue'
+//import LogInService from "../services/login-service"
+import bookStoreMessages from "../assets/messages/books-store.json";
+import { useAuthStore } from '../stores/auth';
+import loginCredentials from "../assets/login.json";
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+const authStore = useAuthStore(); 
+// const $q = useQuasar()
+
+const loginLabels = bookStoreMessages?.login?.labels;
+const loginErrors = bookStoreMessages?.login?.errors;
+
+const name = ref(null);
+const password = ref(null);
+const alertBanner = ref(false);
+const alertMessage = ref(null);
+
+
+const onSubmit = () => {
+  alertBanner.value = false;
+  const cred = loginCredentials.find(obj => obj?.userName === name.value && obj?.password === password.value)
+  cred ? navigateToHome() : showAlert();
+}
+
+// const login = async () => {
+//   try {
+//     const res = await LogInService.login();
+//     console.log(res)
+//   }
+//   catch (error) {
+//     console.log(error)
+//   }
+// }
+
+const navigateToHome = () => {
+  authStore.authenticateUser();
+  router.push({ name: 'home' })
+}
+const showAlert = () => {
+  alertBanner.value = true;
+  alertMessage.value = "Incorrect userName or Password"
+}
+// login()
+</script>

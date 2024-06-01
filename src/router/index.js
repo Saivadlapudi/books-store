@@ -1,15 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import validateRouteProtection from './auth-guard'
-// import DashboardView from '../views/DashboardView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    // {
-    //   path: '/',
-    //   name: 'home',
-    //   component: DashboardView
-    // },
     {
       path: '/',
       redirect:"/login",
@@ -29,12 +23,20 @@ const router = createRouter({
       component: () => import('../views/LogInView.vue')
     },
     {
-      path: '/dashboard',
-      name: 'dashboard',
+      path: '/home',
+      name: 'home',
       meta:{
         // restrictDirectAccess:true
       },
-      component: () => import('../views/DashboardView.vue')
+      component: () => import('../views/BookStoreView.vue')
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      meta:{
+         restrictDirectAccess:true
+      },
+      component: () => import('../views/CartView.vue')
     },
   ]
 })

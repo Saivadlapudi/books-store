@@ -1,0 +1,271 @@
+[ {
+    "id": 1,
+    "name": "Journey",
+    "describe": "Personal experiences and travels that change lives.",
+    "writer": "Gonzalez",
+    "image": "https://picsum.photos/500/329",
+    "inCart":false,
+    "cost": "120"
+},
+    {
+        "id": 2,
+        "name": "Explorers",
+        "describe": "An adventurous tale about brave explorers discovering new lands and facing challenges.",
+        "writer": "Smith",
+        "inCart":false,
+        "image": "https://picsum.photos/500/300",
+        "cost": "120"
+    },
+    {
+        "id": 3,
+        "name": "Warriors",
+        "describe": "A gripping saga of courage and valor in the face of great adversity.",
+        "writer": "Johnson",
+        "inCart":false,        
+        "image": "https://picsum.photos/500/301",
+        "cost": "150"
+    },
+    {
+        "id": 4,
+        "name": "Mysteries",
+        "describe": "Intriguing and suspenseful stories that keep you guessing until the very end.",
+        "writer": "Brown",
+        "inCart":false,
+        "image": "https://picsum.photos/500/302",
+        "cost": "130"
+    },
+    {
+        "id": 5,
+        "name": "Legends",
+        "describe": "Epic stories of heroes and their legendary feats.",
+        "writer": "Jones",
+        "inCart":false,
+        "image": "https://picsum.photos/500/303",
+        "cost": "140"
+    },
+    {
+        "id": 6,
+        "name": "Rebels",
+        "describe": "Tales of defiance and rebellion against oppressive regimes.",
+        "writer": "Garcia",
+        "inCart":false,
+        "image": "https://picsum.photos/500/304",
+        "cost": "110"
+    },
+    {
+        "id": 7,
+        "name": "Adventures",
+        "describe": "Exciting journeys filled with unexpected twists and turns.",
+        "writer": "Martinez",
+        "inCart":false,
+        "image": "https://picsum.photos/500/305",
+        "cost": "125"
+    },
+    {
+        "id": 8,
+        "name": "Treasures",
+        "describe": "Hunt for hidden riches in uncharted territories.",
+        "writer": "Rodriguez",
+        "inCart":false,
+        "image": "https://picsum.photos/500/306",
+        "cost": "135"
+    },
+    {
+        "id": 9,
+        "name": "Battles",
+        "describe": "Historic conflicts that changed the course of history.",
+        "writer": "Wilson",
+        "inCart":false,
+        "image": "https://picsum.photos/500/307",
+        "cost": "145"
+    },
+    {
+        "id": 10,
+        "name": "Voyages",
+        "describe": "Sea-faring exploits and adventures across the oceans.",
+        "writer": "Anderson",
+        "inCart":false,
+        "image": "https://picsum.photos/500/308",
+        "cost": "115"
+    },
+    {
+        "id": 11,
+        "name": "Dreams",
+        "describe": "Fantasy and imagination come to life in these captivating stories.",
+        "writer": "Thomas",
+        "inCart":false,
+        "image": "https://picsum.photos/500/309",
+        "cost": "105"
+    },
+    {
+        "id": 12,
+        "name": "Odyssey",
+        "describe": "Epic journeys through unknown territories and mythical lands.",
+        "writer": "Taylor",
+        "inCart":false,
+        "image": "https://picsum.photos/500/310",
+        "cost": "100"
+    },
+    {
+        "id": 13,
+        "name": "Quests",
+        "describe": "Search for the unknown in these thrilling adventures.",
+        "writer": "Lee",
+        "inCart":false,
+        "image": "https://picsum.photos/500/311",
+        "cost": "110"
+    },
+    {
+        "id": 14,
+        "name": "Myths",
+        "describe": "Ancient tales of gods, heroes, and mythical creatures.",
+        "writer": "Harris",
+        "inCart":false,
+        "image": "https://picsum.photos/500/312",
+        "cost": "120"
+    },
+    {
+        "id": 15,
+        "name": "Tales",
+        "describe": "Short stories that captivate and entertain.",
+        "writer": "Clark",
+        "inCart":false,
+        "image": "https://picsum.photos/500/313",
+        "cost": "115"
+    },
+    {
+        "id": 16,
+        "name": "Journeys",
+        "describe": "Explorative stories of personal and physical journeys.",
+        "writer": "Lewis",
+        "inCart":false,
+        "image": "https://picsum.photos/500/314",
+        "cost": "130"
+    },
+    {
+        "id": 17,
+        "name": "Expeditions",
+        "describe": "Challenging adventures to remote and dangerous locations.",
+        "writer": "Robinson",
+        "inCart":false,
+        "image": "https://picsum.photos/500/315",
+        "cost": "140"
+    },
+    {
+        "id": 18,
+        "name": "Encounters",
+        "describe": "Unusual meetings with strange and fascinating characters.",
+        "writer": "Walker",
+        "inCart":false,
+        "image": "https://picsum.photos/500/316",
+        "cost": "125"
+    },
+    {
+        "id": 19,
+        "name": "Escapades",
+        "describe": "Daring adventures filled with excitement and danger.",
+        "writer": "Perez",
+        "inCart":false,
+        "image": "https://picsum.photos/500/317",
+        "cost": "135"
+    },
+    {
+        "id": 20,
+        "name": "Chronicles",
+        "describe": "Historical accounts of significant events and people.",
+        "writer": "Hall",
+        "inCart":false,
+        "image": "https://picsum.photos/500/318",
+        "cost": "150"
+    },
+    {
+        "id": 21,
+        "name": "Epic",
+        "describe": "Grand stories of heroic deeds and adventures.",
+        "writer": "Young",
+        "inCart":false,
+        "image": "https://picsum.photos/500/319",
+        "cost": "140"
+    },
+    {
+        "id": 22,
+        "name": "Saga",
+        "describe": "Long, involved stories that span generations.",
+        "writer": "Allen",
+        "inCart":false,
+        "image": "https://picsum.photos/500/320",
+        "cost": "130"
+    },
+    {
+        "id": 23,
+        "name": "Fables",
+        "describe": "Moral stories that teach important lessons.",
+        "writer": "King",
+        "inCart":false,
+        "image": "https://picsum.photos/500/321",
+        "cost": "110"
+    },
+    {
+        "id": 24,
+        "name": "Journeys",
+        "describe": "Stories of travel and discovery.",
+        "writer": "Wright",
+        "inCart":false,
+        "image": "https://picsum.photos/500/322",
+        "cost": "125"
+    },
+    {
+        "id": 25,
+        "name": "Trek",
+        "describe": "Long adventures through challenging terrains.",
+        "writer": "Lopez",
+        "inCart":false,
+        "image": "https://picsum.photos/500/323",
+        "cost": "145"
+    },
+    {
+        "id": 26,
+        "name": "Quest",
+        "describe": "Adventures in search of something valuable.",
+        "writer": "Hill",
+        "inCart":false,
+        "image": "https://picsum.photos/500/324",
+        "cost": "135"
+    },
+    {
+        "id": 27,
+        "name": "Pilgrimage",
+        "describe": "Spiritual journeys to sacred places.",
+        "writer": "Scott",
+        "inCart":false,
+        "image": "https://picsum.photos/500/325",
+        "cost": "150"
+    },
+    {
+        "id": 28,
+        "name": "Expedition",
+        "describe": "Long and difficult journeys into the unknown.",
+        "writer": "Green",
+        "inCart":false,
+        "image": "https://picsum.photos/500/326",
+        "cost": "140"
+    },
+    {
+        "id": 29,
+        "name": "Adventure",
+        "describe": "Exciting experiences in exotic locations.",
+        "writer": "Adams",
+        "inCart":false,
+        "image": "https://picsum.photos/500/327",
+        "cost": "125"
+    },
+    {
+        "id": 30,
+        "name": "Discovery",
+        "describe": "Finding the unknown and uncovering secrets.",
+        "writer": "Baker",
+        "inCart":false,
+        "image": "https://picsum.photos/500/328",
+        "cost": "110"
+    }
+]

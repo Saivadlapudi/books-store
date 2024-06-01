@@ -1,0 +1,33 @@
+{
+    "login":{
+        "labels":{
+            "loginToApplication":"Login To Application",
+                "userName":"User Name*",
+                "password":"Password*",
+                "register":"Create Account",
+                "login":"login"
+
+        },
+        "errors":{
+            "pleaseEnterUserName":"Please Enter User Name",
+            "pleaseEnterPassword":"Please Enter Password",
+            "pleaseEnterCorrectPassword":"Please Enter Correct Password"
+        }
+    },
+    "books":{
+        "labels":{
+            "booksStore":"Books Store",
+            "books":"Books: ",
+            "price":"Price: ",
+            "describe":"Describe: ",
+            "goToCart":"Go To Cart",
+            "addToCart":"Go To Cart",
+            "delete":"Delete",
+            "proceedToPayment":"Proceed To Payment",
+            "home":"Home"                
+        },
+        "errors":{
+            
+        }
+    }
+}
