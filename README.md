@@ -1,6 +1,9 @@
-# mini-project
+# Books Store
 
-This template should help get you started developing with Vue 3 in Vite.
+Developed using dummy json data 
+credentials 
+userName: vardhan@gmail.com
+password: Vardhan1
 
 ## Recommended IDE Setup
 
